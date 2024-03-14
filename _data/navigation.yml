@@ -25,4 +25,10 @@ categories:
   - title: "Categories3"
     url: /categories/categories3/
   - title: "Categories4"
-    url: /categories/categories4/
+    url: /categories/categories4
+  - title: "Framework"
+    children:
+      - title: "Spring"
+        url: /categories/spring/
+      - title: "Nothing"
+        url: /categories/nothing/
