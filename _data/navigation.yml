@@ -22,14 +22,14 @@ categories:
     url: /categories/algorithm/
   - title: "CS"
     url: /categories/cs/
-  - title: "Categories3"
-    url: /categories/categories3/
-  - title: "Categories4"
-    url: /categories/categories4
+  - title: "Spring"
+    url: /categories/spring/
+  - title: "etc"
+    url: /categories/etc/
     
-  - title: "Framework"
-    children:
-      - title: "Spring"
-        url: /categories/spring/
-      - title: "Nothing"
-        url: /categories/nothing/
+  #- title: "Framework"
+  #  children:
+  #  - title: "Spring"
+   #     url: /categories/spring/
+   #   - title: "Nothing"
+    #    url: /categories/nothing/
