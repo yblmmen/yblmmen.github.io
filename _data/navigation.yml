@@ -27,9 +27,9 @@ categories:
   - title: "etc"
     url: /categories/etc/
     
-  #- title: "Framework"
-  #  children:
-  #  - title: "Spring"
-   #     url: /categories/spring/
-   #   - title: "Nothing"
-    #    url: /categories/nothing/
+  - title: "Framework"
+    children:
+     - title: "Spring"
+       url: /categories/spring/
+    - title: "Nothing"
+       url: /categories/nothing/
