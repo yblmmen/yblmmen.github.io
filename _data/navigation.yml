@@ -18,15 +18,15 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
- - title: "Learning"
-   children:
-   - title: "Algorithm"
-     url: /categories/algorithm/
-   - title: "CS"
-     url: /categories/cs/
-   - title: "etc"
-     url: /categories/etc/
-    
+  - title: "Learning"
+    children:
+     - title: "Algorithm"
+       url: /categories/algorithm/
+     - title: "CS"
+       url: /categories/cs/
+     - title: "etc"
+       url: /categories/etc/
+     
   - title: "Framework"
     children:
      - title: "Spring"
