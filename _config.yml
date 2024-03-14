@@ -99,7 +99,7 @@ analytics:
 # Site Author
 author:
   name: "your name here" # 블로그 닉네임
-  avatar: "/assets/images/meee.png" # 블로그 프로필 사진
+  avatar: "/assets/images/snowballmoon.png" # 블로그 프로필 사진
   bio              : "Hello, I'm SeHee Moon!"
   location         : "Seoul, Korea"
   email            : "snowball9820@gmail.com"
