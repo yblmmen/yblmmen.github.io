@@ -22,8 +22,8 @@ categories:
     url: /categories/algorithm/
   - title: "CS"
     url: /categories/cs/
-  - title: "Spring"
-    url: /categories/spring/
+  #- title: "Spring"
+    #url: /categories/spring/
   - title: "etc"
     url: /categories/etc/
     
