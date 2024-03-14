@@ -31,5 +31,5 @@ categories:
     children:
      - title: "Spring"
        url: /categories/spring/
-    - title: "Nothing"
+     - title: "Nothing"
        url: /categories/nothing/
