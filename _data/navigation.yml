@@ -18,12 +18,14 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Learning"
+  - title: "Studying"
     children:
      - title: "Algorithm"
        url: /categories/algorithm/
      - title: "CS"
        url: /categories/cs/
+     - title: "JAVA"
+       url: /categories/java/
      - title: "etc"
        url: /categories/etc/
      
