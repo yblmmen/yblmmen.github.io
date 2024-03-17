@@ -1,6 +1,6 @@
 ---
-title: "[CS] CS 지식1"
-excerpt: "본문의 주요 내용을 여기에 입력하세요"
+title: "[GitHub] GitHub 블로그 사용해보기"
+excerpt: "github pages에 대한 설명과 github 블로그 커스텀, 포스팅에 대해서"
 
 categories:
   - GITHUB
