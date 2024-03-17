@@ -58,5 +58,6 @@ JAVA를 배우긴 했으나 실제 응용 과정에서 왜 그렇게 사용해�
 ### 참조
 https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html
 https://en.wikipedia.org/wiki/Primitive_wrapper_class_in_Java#cite_note-1
+https://javatutorial95.blogspot.com/2017/04/java-wrapper-class.html
 https://ontheway.tistory.com/73  
 +ChatGPT
