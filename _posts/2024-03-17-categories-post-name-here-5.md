@@ -25,6 +25,10 @@ last_modified_at: 2024-03-17
 ### Primitive Type  
 
 
-## etc
+## etc.
 ### 생각 정리
 ### 참조
+https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html
+https://en.wikipedia.org/wiki/Primitive_wrapper_class_in_Java#cite_note-1
+https://ontheway.tistory.com/73
++chatGPT
