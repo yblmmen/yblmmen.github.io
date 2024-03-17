@@ -28,7 +28,7 @@ last_modified_at: 2024-03-17
 * 기본형은 사용하기 전에 선언된다.
 * 비객체 타입으로 null 값을 갖지 못한다. (test 코드 작성 시 사용하지 않았던 이유)
 * 값을 간단하게 저장하고 메모리 공간을 적게 차지한다.
-* Stack 영역에 저장되며 값을 가져올 때 속도가 빨라서 좋다.  
+* Stack 영역에 저장되며 값을 가져올 때 속도가 빨라서 좋다.
 ### Wrapper Class  
 * 인수로 데이터 타입을 전달 받아 해당 값을 객체로 만들어준다. (Java는 객체지향 언어, 모든 것을 객체로 다룬다.)  
 * Byte, Boolean, Character, Double, Float, Integer, Long, Short로 사용해준다.
@@ -43,12 +43,10 @@ last_modified_at: 2024-03-17
 ```
 primitive type > Stack에서 빠르게 조회  
 boxing 후 > Stack + Heap 영역 조회
-
 ```  
   
 ## 결론  
-불필요한 객체 생성과 참조 비용이 발생하여 성능 저하를 일으킬 수 있으므로 필요할 때 잘 골라서 사용하는 것이 좋을 것 같다.  
-Not null이 보장된 상황, 간단한 값 저장과 연산에서는 primitive을 사용하고 객체지향적인 기능이 필요하거나 null 값이 발생할 것 같을 때에는 Wrapper Class를 쓰자.  
+불필요한 객체 생성과 참조 비용이 발생하여 성능 저하를 일으킬 수 있으므로 필요할 때 잘 골라서 사용하는 것이 좋을 것 같다. Not null이 보장된 상황, 간단한 값 저장과 연산에서는 primitive을 사용하고 객체지향적인 기능이 필요하거나 null 값이 발생할 것 같을 때에는 Wrapper Class를 쓰자.  
 
 
 ## etc.
