@@ -20,16 +20,24 @@ last_modified_at: 2024-03-18
 깃허브 블로그를 생성했으니 어떤 방식으로 돌아가는지 살펴보고 변경이 필요한 부분에 대해서는 직접 자료를 찾아가면서 변경해보도록 하려고 한다.
 
 ## II. 깃허브 블로그란?
-> https://docs.github.com/ko/pages/quickstart
 
 ### GitHuB Pages
-깃허브 블로그는 'GitHub Pages'를 이용해서 만든 것인데 GitHub Pages는 GitHub를 통해 호스트 되고 게시되는 퍼블릭 웹페이지이다.  
-GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가장 빠른 방법이 'Jekyll' 테마 선택기를 사용해서 미리 만들어진 테마를 로드하는 것이라고 소개하고 있다.  
-그 이후 콘텐츠와 스타일을 수정하는 방식으로 사용하면 된다고 한다.
+![output](/assets/images/posts_img/etc-cate/gitpages.png)  
+GitHub Pages는 GitHub 리포지토리에서 `HTML`, `CSS` 및 `JavaScript` 파일을 직접 가져와서 필요에 따라 빌드 프로세스를 통해 파일을 실행하고 웹 사이트를 게시하는 `정적 사이트 호스팅 서비스`라고 한다.
+![output](/assets/images/posts_img/etc-cate/gitpagesdocs.png)
+깃허브 블로그는 `GitHub Pages`를 이용해서 만든 것인데 GitHub Pages는 GitHub를 통해 호스트 되고 게시되는 퍼블릭 웹페이지이다.  
+GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가장 빠른 방법이 `Jekyll` 테마 선택기를 사용해서 미리 만들어진 테마를 로드하는 것이라고 소개하고 있다.  
+그 이후 콘텐츠와 스타일을 수정하는 방식으로 사용하면 된다고 한다.  
+  
+추가적인 정보는 아래 GitHub Docs에서 확인하면 된다.
+>
+* https://docs.github.com/ko/pages/getting-started-with-github-pages/about-github-pages
+* https://docs.github.com/ko/pages/quickstart  
+* 
 ### Static Site Generator
 > https://jamstack.org/generators/
 
-위 사이트를 참고하면 다양한 'Static Site Generator'를 볼 수가 있는데 많이 언급되는 것들을 정리해보면 'Jekyll' 'Hexo' 'Hugo' 가 있다.
+위 사이트를 참고하면 다양한 `Static Site Generator`를 볼 수가 있는데 많이 언급되는 것들을 정리해보면 'Jekyll' 'Hexo' 'Hugo' 가 있다.
 > ### Jekyll
 
 ## V. etc.
@@ -37,4 +45,4 @@ GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가
 
 
 ### 참조
-https://docs.github.com/ko/pages/quickstart
+https://docs.github.com/ko/pages/getting-started-with-github-pages/about-github-pages
