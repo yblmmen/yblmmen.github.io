@@ -22,10 +22,10 @@ categories:
     children:
      - title: "Algorithm"
        url: /categories/algorithm/
-     - title: "CS"
-       url: /categories/cs/
      - title: "JAVA"
        url: /categories/java/
+     - title: "CS"
+       url: /categories/cs/
      - title: "etc"
        url: /categories/etc/
      
