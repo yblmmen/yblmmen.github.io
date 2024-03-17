@@ -1,19 +1,19 @@
 ---
-title: "[JAVA] Primitive Type 과 Wrapper Class "
+title: "[CS] CS 지식1"
 excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
-  - JAVA
+  - CS
 tags:
   - [tag1, tag2]
 
-permalink: /java/post1/
+permalink: /cs/post-name-here-2/
 
 toc: true
 toc_sticky: true
 
-date: 2024-03-17
-last_modified_at: 2024-03-17
+date: 2024-03-14
+last_modified_at: 2024-03-14
 ---
 
 ## 🦥 본문1
