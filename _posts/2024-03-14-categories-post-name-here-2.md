@@ -53,7 +53,7 @@ GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가
 ### minimal-mistakes theme  
 살펴보니 minimal-mistakes 테마를 사용하여 Github Pages를 만들었길래 커스텀할 때 minimal-mistakes 관련 정보가 필요할 것 같아서 찾아보았다.  
 minimal-mistakes 관련 docs와 github 링크이다.
->[minimal-mistakes github](https://github.com/mmistakes/minimal-mistakes)
+>[minimal-mistakes github](https://github.com/mmistakes/minimal-mistakes)  
 > [minimal-mistakes Docs](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
 ![output](/assets/images/posts_img/etc-cate/minimal.png)   
@@ -88,7 +88,8 @@ primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 
 
    ![output](/assets/images/posts_img/etc-cate/image.png)
   
-형식은 markdown 언어를 사용하고 있으니까 아래와 같이 작성하면 된다.
+형식은 markdown 언어를 사용하고 있으니까 아래와 같이 작성하면 된다.  
+
 ``` ![output](이미지 주소)```  
   
 필자는 후자의 방식을 사용중인데 필요한 이미지를 캡쳐해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때에는 이미지 복사해서 바로 붙여넣기를 했었다.
@@ -104,7 +105,10 @@ primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 
 
 
 ## IV. etc.
-### 생각 정리
+### 생각 정리  
+github 블로그를 사용해보니까 아직까지는 만족스럽다.  
+ide를 사용해서 로컬에서도 작성할 수 있고 평소 자주 쓰는 intellij를 통해 수정하고 commit push를 통해 업로드 하는 부분이 매우 마음에 든다.  
+이후에는 github 프로필에 github 블로그 최신글 불러오기, github 블로그에 댓글 기능 추가하기 등을 해볼 예정이다.
 
 
 ### 참조
