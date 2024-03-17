@@ -3,11 +3,11 @@ title: "[Github] github 블로그 사용법"
 excerpt: "github 블로그 사용법과 커스텀에 대해서"
 
 categories:
-  - Github
+  - GITHUB
 tags:
   - [tag1, tag2]
 
-permalink: /etc/post-name-here-7/
+permalink: /github/post-name-here-7/
 
 toc: true
 toc_sticky: true
