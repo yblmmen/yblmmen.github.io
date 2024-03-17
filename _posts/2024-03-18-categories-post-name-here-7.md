@@ -3,7 +3,7 @@ title: "[Github] github 블로그 사용법"
 excerpt: "github 블로그 사용법과 커스텀에 대해서"
 
 categories:
-  - etc
+  - ETC
 tags:
   - [tag1, tag2]
 
