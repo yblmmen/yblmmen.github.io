@@ -5,7 +5,7 @@ excerpt: "github 블로그 커스텀과 사용법에 대해서"
 categories:
   - etc
 tags:
-  - [github pages]
+  - [github]
 
 permalink: /etc/post1-github/
 
