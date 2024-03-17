@@ -12,8 +12,8 @@ permalink: /github/post-name-here-2/
 toc: true
 toc_sticky: true
 
-date: 2024-03-14
-last_modified_at: 2024-03-14
+date: 2024-03-18
+last_modified_at: 2024-03-18
 ---
 
 ## I. 깃허브 블로그를 제대로 사용해보자
