@@ -3,11 +3,11 @@ title: "[Algorithm]-알고리즘1"
 excerpt: "본문의 주요 내용을 여기에 입력하세요 ."
 
 categories:
-  - ETC
+  - Github
 tags:
   - [tag1, tag2]
 
-permalink: /etc/github-post1/
+permalink: /github/post-name-here-7/
 
 toc: true
 toc_sticky: true
@@ -16,7 +16,7 @@ date: 2024-03-18
 last_modified_at: 2024-03-18
 ---
 
-## I. 깃허브 블로그를 제대로 사용해보자
+## I. 깃허브 블로그를 사용하기
 깃허브 블로그를 생성했으니 어떤 방식으로 돌아가는지 살펴보고 변경이 필요한 부분에 대해서는 직접 자료를 찾아가면서 변경해보도록 하려고 한다.
 
 ## II. Github 블로그 관련 정보

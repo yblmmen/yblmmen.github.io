@@ -26,9 +26,9 @@ categories:
        url: /categories/java/
      - title: "CS"
        url: /categories/cs/
-     - title: "ETC"
-       url: /categories/etc/
-     
+     - title: "Github"
+       url: /categories/github/
+
   - title: "Framework"
     children:
      - title: "Spring"
