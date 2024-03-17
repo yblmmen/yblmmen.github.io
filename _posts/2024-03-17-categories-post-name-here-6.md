@@ -7,7 +7,7 @@ categories:
 tags:
   - [Java, primitive, wrapper]
 
-permalink: /java/post1/
+permalink: /java/post2/
 
 toc: true
 toc_sticky: true
@@ -43,6 +43,7 @@ last_modified_at: 2024-03-17
 ```
 primitive type > Stack에서 빠르게 조회  
 boxing 후 > Stack + Heap 영역 조회
+
 ```  
   
 ## 결론  
