@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-03-17
-last_modified_at: 2024-03-18
+last_modified_at: 2024-03-17
 ---
 ## I. 궁금증 발생 point  
 스프링 공부 중 test 코드를 작성하다가 long이 아니라 Long(Wrapper Class)를 사용하는 것을 보고 구체적으로 어떤 차이가 있는지 궁금증이 발생하였다.
