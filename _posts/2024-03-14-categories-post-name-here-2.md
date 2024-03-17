@@ -1,6 +1,6 @@
 ---
-title: "[GITHUB] github 블로그 사용하기"
-excerpt: "github pages, github 블로그 커스텀과 포스팅에 대해서"
+title: "[CS] CS 지식1"
+excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
   - GITHUB
@@ -12,8 +12,8 @@ permalink: /github/post-name-here-2/
 toc: true
 toc_sticky: true
 
-date: 2024-03-18
-last_modified_at: 2024-03-18
+date: 2024-03-14
+last_modified_at: 2024-03-14
 ---
 
 ## I. 깃허브 블로그를 제대로 사용해보자
