@@ -5,9 +5,9 @@ excerpt: "github pages에 대한 설명과 github 블로그 커스텀, 포스팅
 categories:
   - GITHUB
 tags:
-  - [tag1, tag2]
+  - [github, jekyll]
 
-permalink: /github/post-name-here-2/
+permalink: /github/github-post1/
 
 toc: true
 toc_sticky: true
@@ -17,7 +17,7 @@ last_modified_at: 2024-03-17
 ---
 
 ## I. 깃허브 블로그를 제대로 사용해보자
-깃허브 블로그를 생성했으니 어떤 방식으로 돌아가는지 살펴보고 변경이 필요한 부분에 대해서는 직접 자료를 찾아가면서 변경해보도록 하려고 한다.
+깃허브 블로그를 생성했으니 어떤 방식으로 돌아가는지 살펴보고 변경이 필요한 부분에 대해서는 직접 자료를 찾아가면서 변경해 보도록 하려고 한다.
 
 ## II. Github 블로그 관련 정보
 
@@ -26,7 +26,7 @@ last_modified_at: 2024-03-17
 GitHub Pages는 GitHub 리포지토리에서 `HTML`, `CSS` 및 `JavaScript` 파일을 직접 가져와서 필요에 따라 빌드 프로세스를 통해 파일을 실행하고 웹 사이트를 게시하는 `정적 사이트 호스팅 서비스`라고 한다.
 ![output](/assets/images/posts_img/etc-cate/gitpagesdocs.png)
 깃허브 블로그는 `GitHub Pages`를 이용해서 만든 것인데 GitHub Pages는 GitHub를 통해 호스트 되고 게시되는 퍼블릭 웹페이지이다.  
-GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가장 빠른 방법이 `Jekyll` 테마 선택기를 사용해서 미리 만들어진 테마를 로드하는 것이라고 소개하고 있다.  
+GitHub Docs 공식 문서를 보면 GitHub Pages를 시작하고 실행하는 가장 빠른 방법이 `Jekyll` 테마 선택기를 사용해서 미리 만들어진 테마를 로드하는 것이라고 소개하고 있다.  
 그 이후 콘텐츠와 스타일을 수정하는 방식으로 사용하면 된다고 한다.
 
 추가적인 정보는 아래 GitHub Docs에서 확인하면 된다.
@@ -39,7 +39,7 @@ GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가
 
 > [Static Site Generator](https://jamstack.org/generators/)
 
-위 사이트를 참고하면 다양한 `Static Site Generator`를 볼 수가 있는데 많이 언급되는 것들을 정리해보면 `Jekyll` `Hexo` `Hugo` 가 있다.  
+위 사이트를 참고하면 다양한 `Static Site Generator`를 볼 수가 있는데 많이 언급되는 것들을 정리해 보면 `Jekyll` `Hexo` `Hugo` 가 있다.  
 
 >#### Jekyll
 - Ruby 기반으로 GitHub Docs에서도 언급하고 있으며 가장 많이 사용한다. 또한 Github 내부 엔진이라서 Github Pages에서도 자연스럽게 동작한다. 필자의 블로그도 Jekyll 기반이다.  
@@ -67,7 +67,7 @@ GitHub 블로그에 포스팅을 편리하게 하려면 편집기가 필요하�
 
 ### 커스텀  
 ![output](/assets/images/posts_img/etc-cate/plum.png)
-블로그 테마를 만드신 분이 올려준 설명에서 _config.yml 부분을 보니 minimal_mistakes_skin 중 plum으로 설정해놓은 것을 보고 블로그 메인 색상을 변경하려면 plum skin에서 수정하면 될 것 같았다.  
+블로그 테마를 만드신 분이 올려준 설명에서 _config.yml 부분을 보니 minimal_mistakes_skin 중 plum으로 설정해 놓은 것을 보고 블로그 메인 색상을 변경하려면 plum skin에서 수정하면 될 것 같았다.  
 ![output](/assets/images/posts_img/etc-cate/plum2.png)  
 primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 확인할 수 있었다.  
   
@@ -92,12 +92,12 @@ primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 
 
 ``` ![output](이미지 주소)```  
   
-필자는 후자의 방식을 사용중인데 필요한 이미지를 캡쳐해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때에는 이미지 복사해서 바로 붙여넣기를 했었다.
+필자는 후자의 방식을 사용 중인데 필요한 이미지를 캡처해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때는 이미지 복사해서 바로 붙여넣기가 가능하여 편리했었다...
 #### 포스팅  
 
 ![output](/assets/images/posts_img/etc-cate/post.png)  
 
-보여질 글의 제목, 짧은 소개, 카테고리 등을 설정해주고 글을 작성하면 된다.  
+보여질 글의 제목, 짧은 소개, 카테고리 등을 설정해 주고 글을 작성하면 된다.  
 
 ![output](/assets/images/posts_img/etc-cate/deploy.png)  
 
@@ -106,9 +106,9 @@ primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 
 
 ## IV. etc.
 ### 생각 정리  
-github 블로그를 사용해보니까 아직까지는 만족스럽다.  
-ide를 사용해서 로컬에서도 작성할 수 있고 평소 자주 쓰는 intellij를 통해 수정하고 commit push를 통해 업로드 하는 부분이 매우 마음에 든다.  
-이후에는 github 프로필에 github 블로그 최신글 불러오기, github 블로그에 댓글 기능 추가하기 등을 해볼 예정이다.
+github 블로그를 사용해 보니까 아직까지는 만족스럽다.  
+IDE를 사용해서 로컬에서도 작성할 수 있고 평소 자주 쓰는 intellij를 통해 수정하고 commit push를 통해 업로드 하는 부분이 매우 마음에 든다.  
+이후에는 github 프로필에 github 블로그 최신 글 불러오기, github 블로그에 댓글 기능 추가하기 등을 해볼 예정이다.
 
 
 ### 참조
