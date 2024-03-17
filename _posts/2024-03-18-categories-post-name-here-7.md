@@ -3,11 +3,11 @@ title: "[CS] CS 지식1"
 excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
-  - Github
+  - Vlog
 tags:
   - [tag1, tag2]
 
-permalink: /github/post-name-here-7/
+permalink: /vlog/post-name-here-7/
 
 toc: true
 toc_sticky: true
