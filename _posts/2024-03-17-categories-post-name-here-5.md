@@ -25,4 +25,6 @@ last_modified_at: 2024-03-17
 ### Primitive Type  
 
 
-## 
+## etc
+### 생각 정리
+### 참조
