@@ -3,11 +3,11 @@ title: "[CS] CS 지식1"
 excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
-  - CS
+  - GITHUB
 tags:
   - [tag1, tag2]
 
-permalink: /cs/post-name-here-2/
+permalink: /github/post-name-here-2/
 
 toc: true
 toc_sticky: true

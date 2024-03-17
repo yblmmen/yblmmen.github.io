@@ -1,9 +1,9 @@
 ---
-title: "CS"
+title: "GITHUB"
 layout: category
-permalink: /categories/cs/
+permalink: /categories/github/
 author_profile: true
-taxonomy: CS
+taxonomy: GITHUB
 sidebar:
   nav: "categories"
 ---
