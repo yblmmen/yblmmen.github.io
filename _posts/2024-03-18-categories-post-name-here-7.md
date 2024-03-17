@@ -1,13 +1,13 @@
 ---
-title: "[Github] github 블로그 사용법"
-excerpt: "github 블로그 사용법과 커스텀에 대해서"
+title: "[Algorithm]-알고리즘1"
+excerpt: "본문의 주요 내용을 여기에 입력하세요 ."
 
 categories:
-  - ETC
+   - ETC
 tags:
-  - [tag1, tag2]
+   - [tag1, tag2]
 
-permalink: /etc/post-name-here-7/
+permalink: /etc/github-post1/
 
 toc: true
 toc_sticky: true
