@@ -60,19 +60,46 @@ minimal-mistakes 관련 docs와 github 링크이다.
 마음에 드는 스킨을 골라 사용하면 될 것 같다.  
 
 ## III. 커스텀 방법과 사용기  
-### 편집기 사용하기  
-### 커스텀
-### 포스트 방식 
+### Editor 선택  
+GitHub 블로그에 포스팅을 편리하게 하려면 편집기가 필요하다.  
+`Markdown`을 지원하는 editor를 사용하면 된다.  
+찾아보니 보통 `vscode`를 사용하는 것 같고 필자는 평소에 `intellij`를 제일 많이 사용하기 때문에 편집기로 `intellij`를 선택했다.  
 
-
-
-
+### 커스텀  
+![output](/assets/images/posts_img/etc-cate/plum.png)
+블로그 테마를 만드신 분이 올려준 설명에서 _config.yml 부분을 보니 minimal_mistakes_skin 중 plum으로 설정해놓은 것을 보고 블로그 메인 색상을 변경하려면 plum skin에서 수정하면 될 것 같았다.  
+![output](/assets/images/posts_img/etc-cate/plum2.png)  
+primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 확인할 수 있었다.  
   
+이외에도 블로그명이나 프로필 이미지는 _config.yml 에서 변경하고 관리할 수 있다.  
 
-## V. etc.
+### 포스트 방식  
+#### 카테고리 생성
+먼저 카테고리를 추가하는 방법은 `navigation.yml` 과 `_pages`의 `categories` 부분에서 추가하고 수정해주면 된다.
+![output](/assets/images/posts_img/etc-cate/cate.png)    
+#### 이미지 업로드 
+벨로그를 쓸 때 보다 불편한 점이 있다면 이미지를 올릴 때인데 이미지 링크를 생성해서 올리거나 assets-images에 추가하여 업로드 해야 한다.  
+1. github issues로 주소 생성 
+   ![output](/assets/images/posts_img/etc-cate/issue.png)
+2. assets에 이미지 저장
+   ![output](/assets/images/posts_img/etc-cate/image.png)
+  
+형식은 markdown 언어를 사용하고 있으니까 아래와 같이 작성하면 된다.
+``` ![output](이미지 주소)```  
+  
+필자는 후자의 방식을 사용중인데 필요한 이미지를 캡쳐해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때에는 이미지 복사해서 바로 붙여넣기를 했었다.
+#### 포스팅
+![output](/assets/images/posts_img/etc-cate/post.png)
+보여질 글의 제목, 짧은 소개, 카테고리 등을 설정해주고 글을 작성하면 된다.  
+포스팅을 하면 완전히 deploy 되는데 30초 ~ 1분 정도 소요된다. deploy가 완전히 끝날 때까지  
+
+
+## IV. etc.
 ### 생각 정리
 
 
 ### 참조
 https://docs.github.com/ko/pages/getting-started-with-github-pages/about-github-pages
+https://github.com/mmistakes/minimal-mistakes
+https://github.com/choiiis/minimal-mistakes-choiiis-customized
 
