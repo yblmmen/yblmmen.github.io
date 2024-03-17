@@ -75,23 +75,32 @@ primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 
 
 ### 포스트 방식  
 #### 카테고리 생성
-먼저 카테고리를 추가하는 방법은 `navigation.yml` 과 `_pages`의 `categories` 부분에서 추가하고 수정해주면 된다.
-![output](/assets/images/posts_img/etc-cate/cate.png)    
+먼저 카테고리를 추가하는 방법은 `navigation.yml` 과 `_pages`의 `categories` 부분에서 추가하고 수정해주면 된다.  
+
+![output](/assets/images/posts_img/etc-cate/cate.png)   
+
 #### 이미지 업로드 
 벨로그를 쓸 때 보다 불편한 점이 있다면 이미지를 올릴 때인데 이미지 링크를 생성해서 올리거나 assets-images에 추가하여 업로드 해야 한다.  
-1. github issues로 주소 생성 
+1. github issues로 주소 생성  
+
    ![output](/assets/images/posts_img/etc-cate/issue.png)
-2. assets에 이미지 저장
+2. assets에 이미지 저장  
+
    ![output](/assets/images/posts_img/etc-cate/image.png)
   
 형식은 markdown 언어를 사용하고 있으니까 아래와 같이 작성하면 된다.
 ``` ![output](이미지 주소)```  
   
 필자는 후자의 방식을 사용중인데 필요한 이미지를 캡쳐해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때에는 이미지 복사해서 바로 붙여넣기를 했었다.
-#### 포스팅
-![output](/assets/images/posts_img/etc-cate/post.png)
+#### 포스팅  
+
+![output](/assets/images/posts_img/etc-cate/post.png)  
+
 보여질 글의 제목, 짧은 소개, 카테고리 등을 설정해주고 글을 작성하면 된다.  
-포스팅을 하면 완전히 deploy 되는데 30초 ~ 1분 정도 소요된다. deploy가 완전히 끝날 때까지  
+
+![output](/assets/images/posts_img/etc-cate/deploy.png)  
+
+포스팅을 하면 완전히 deploy 되는데 30초 ~ 1분 정도 소요된다. deploy가 완전히 끝날 때까지 건드리지 않는 것이 좋다.
 
 
 ## IV. etc.
