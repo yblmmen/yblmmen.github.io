@@ -31,18 +31,17 @@ GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가
 
 추가적인 정보는 아래 GitHub Docs에서 확인하면 된다.
 >
-* https://docs.github.com/ko/pages/getting-started-with-github-pages/about-github-pages
-* https://docs.github.com/ko/pages/quickstart
+* [GitHub Pages Docs](https://docs.github.com/ko/pages/getting-started-with-github-pages/about-github-pages)
+* [GitHub Pages 시작하기](https://docs.github.com/ko/pages/quickstart)
   
 
 ### SSG(Static Site Generator)  
 
-> https://jamstack.org/generators/
+> [Static Site Generator](https://jamstack.org/generators/)
 
 위 사이트를 참고하면 다양한 `Static Site Generator`를 볼 수가 있는데 많이 언급되는 것들을 정리해보면 `Jekyll` `Hexo` `Hugo` 가 있다.  
 
-> 
-#### Jekyll
+>#### Jekyll
 - Ruby 기반으로 GitHub Docs에서도 언급하고 있으며 가장 많이 사용한다. 또한 Github 내부 엔진이라서 Github Pages에서도 자연스럽게 동작한다. 필자의 블로그도 Jekyll 기반이다.  
 #### Hexo   
 - 자바스크립트(Node.js) 기반이고 다양한 테마가 있다.  
@@ -54,13 +53,16 @@ GitHub Docs 공식문서를 보면 GitHub Pages를 시작하고 실행하는 가
 ### minimal-mistakes theme  
 살펴보니 minimal-mistakes 테마를 사용하여 Github Pages를 만들었길래 커스텀할 때 minimal-mistakes 관련 정보가 필요할 것 같아서 찾아보았다.  
 minimal-mistakes 관련 docs와 github 링크이다.
->https://github.com/mmistakes/minimal-mistakes
-> https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/  
+>[minimal-mistakes github](https://github.com/mmistakes/minimal-mistakes)
+> [minimal-mistakes Docs](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
 ![output](/assets/images/posts_img/etc-cate/minimal.png)   
 마음에 드는 스킨을 골라 사용하면 될 것 같다.  
 
 ## III. 커스텀 방법과 사용기  
+### 편집기 사용하기  
+### 커스텀
+### 포스트 방식 
 
 
 
