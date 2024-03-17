@@ -1,11 +1,11 @@
 ---
-title: "[CS] CS 지식1"
-excerpt: "본문의 주요 내용을 여기에 입력하세요"
+title: "[GitHub] Github 블로그 사용하기"
+excerpt: "github pages 대한 정보와 깃허브 블로그 커스텀, 포스팅에 대해서"
 
 categories:
   - Vlog
 tags:
-  - [tag1, tag2]
+  - [github, githubpages]
 
 permalink: /vlog/post-name-here-7/
 
