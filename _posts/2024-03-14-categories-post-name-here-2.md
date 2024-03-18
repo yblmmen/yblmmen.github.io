@@ -59,7 +59,7 @@ minimal-mistakes 관련 docs와 github 링크이다.
 ![output](/assets/images/posts_img/etc-cate/minimal.png)   
 마음에 드는 스킨을 골라 사용하면 될 것 같다.  
 
-## III. 커스텀 방법과 사용기  
+## III. 커스텀과 포스팅 방법  
 ### Editor 선택  
 GitHub 블로그에 포스팅을 편리하게 하려면 편집기가 필요하다.  
 `Markdown`을 지원하는 editor를 사용하면 된다.  
