@@ -42,7 +42,7 @@ GitHub Docs 공식 문서를 보면 GitHub Pages를 시작하고 실행하는 �
 위 사이트를 참고하면 다양한 `Static Site Generator`를 볼 수가 있는데 많이 언급되는 것들을 정리해 보면 `Jekyll` `Hexo` `Hugo` 가 있다.  
 
 >#### Jekyll
-- Ruby 기반으로 GitHub Docs에서도 언급하고 있으며 가장 많이 사용한다. 또한 Github 내부 엔진이라서 Github Pages에서도 자연스럽게 동작한다. 필자의 블로그도 Jekyll 기반이다.  
+- Ruby 기반으로 GitHub Docs에서도 언급하고 있으며 가장 많이 사용한다. 또한 Github 내부 엔진이라서 Github Pages에서도 자연스럽게 동작한다. 현재 이 블로그도 Jekyll 기반이다.  
 #### Hexo   
 - 자바스크립트(Node.js) 기반이고 다양한 테마가 있다.  
 #### Hugo  
@@ -92,7 +92,7 @@ primary-color를 원하는 색상으로 변경했더니 일괄 적용된 것을 
 
 ``` ![output](이미지 주소)```  
   
-필자는 후자의 방식을 사용 중인데 필요한 이미지를 캡처해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때는 이미지 복사해서 바로 붙여넣기가 가능하여 편리했었다...
+현재 후자의 방식을 사용 중인데 필요한 이미지를 캡처해서 assets에 추가하여 관리하고 있다. 전에 벨로그를 사용할 때는 이미지 복사해서 바로 붙여넣기가 가능하여 편리했었다...
 #### 포스팅  
 
 ![output](/assets/images/posts_img/etc-cate/post.png)  
