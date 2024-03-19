@@ -57,7 +57,7 @@ minimal-mistakes 관련 docs와 github 링크이다.
 > [minimal-mistakes Docs](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
 ![output](/assets/images/posts_img/etc-cate/minimal.png)   
-마음에 드는 스킨을 골라 사용하면 될 것 같다.  
+여러 버전이 있는데 이것도 세부적으로 편집해서 사용할 수 있다.
 
 ## III. 커스텀과 포스팅 방법  
 ### Editor 선택  
