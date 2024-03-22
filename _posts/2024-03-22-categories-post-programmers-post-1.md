@@ -70,11 +70,7 @@ class Solution {
 }
 ```
 
-  
-
-
-
-## IV. 참조
+## IV. 문제 출처
 https://school.programmers.co.kr/learn/courses/30/lessons/42842
 
 
