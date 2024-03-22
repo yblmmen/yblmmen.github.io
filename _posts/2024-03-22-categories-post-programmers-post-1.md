@@ -7,7 +7,7 @@ categories:
 tags:
   - [algorithm, codingtest]
 
-permalink: /programmers/condingtest-post1/
+permalink: /programmers/post-programmers-post-1/
 
 toc: true
 toc_sticky: true
