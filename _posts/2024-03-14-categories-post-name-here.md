@@ -1,6 +1,6 @@
 ---
-title: "[Algorithm]-알고리즘1"
-excerpt: "본문의 주요 내용을 여기에 입력하세요 ."
+title: "[Algorithm]-코테용 자바 함수 총정리"
+excerpt: "코딩테스트에서 유용하게 쓰이는 자바 함수 정리."
 
 categories:
   - Algorithm
