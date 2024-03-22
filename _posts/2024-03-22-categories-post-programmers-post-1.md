@@ -43,7 +43,7 @@ Leo가 본 카펫에서 갈색 격자의 수 brown, 노란색 격자의 수 yell
 >4. 만약에 카펫의 넓이가 12라고 하면 가로 세로는 (1,12),(2,6),(3,4),(4,3),(6,2),(12,1)이 나올 수 있다.
 >5. 그러나 가로의 길이가 더 길다는 조건과 가로 세로가 최소 3 이상이어야 한다는 조건을 적용하면 (4,3)만 가능하다.
 
-### III. 최종코드
+## III. 최종코드
 ```
 class Solution {
     public int[] solution(int brown, int yellow) {
@@ -74,7 +74,7 @@ class Solution {
 
 
 
-## III. etc.
+## IV. 참조
+https://school.programmers.co.kr/learn/courses/30/lessons/42842
 
-### 참조
 
