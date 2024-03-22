@@ -3,7 +3,7 @@ title: "Programmers"
 layout: category
 permalink: /categories/programmers/
 author_profile: true
-taxonomy: Bruteforce
+taxonomy: Programmers
 sidebar:
-  nav: "Programmers"
+  nav: "categories"
 ---
