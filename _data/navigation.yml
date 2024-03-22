@@ -37,7 +37,7 @@ categories:
   - title: "Project"
     children:
 
-  - title: "etc"
+  - title: "Coding Test"
     children:
-     - title: "Vlog"
-       url: /categories/vlog/
+     - title: "Programmers"
+       url: /categories/programmers/
