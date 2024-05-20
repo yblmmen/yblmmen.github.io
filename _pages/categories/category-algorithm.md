@@ -1,9 +1,9 @@
 ---
-title: "Algorithm"
+title: "Kubernetes"
 layout: category
-permalink: /categories/algorithm/
+permalink: /categories/kubernetes/
 author_profile: true
-taxonomy: Algorithm
+taxonomy: Kubernetes
 sidebar:
   nav: "categories"
 ---
