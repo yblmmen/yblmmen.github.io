@@ -69,6 +69,7 @@ sudo usermod -a -G docker johnlee
       - docker image inspect --format="{{.Os}}" nginx
       - docker inspect nginx | grep Os
     ```
+  
   - docker container 생성
     - docker create -p(port-foward 기능: publish)
       - 예) docker create - p 80(외부 port):80(container port)
@@ -154,23 +155,23 @@ sudo usermod -a -G docker johnlee
   docker container run -d -p 8181:80 --cpu 1 --memory=256m --name test_resource nginx
   ```
      - nginx에서는 이미지 내부에 container 내 port를 80 port로 기본세팅되어 있음
-     ```
-     검색: docker inspect --format="{{.Config.ExposedPorts}}" nginx
-     ```
+       - 확인 : docker inspect --format="{{.Config.ExposedPorts}}" nginx
+
      - container에서 cpu는 소수점 지정 가능
         - cpu 0.1 or cpu 0.25
      - docker run -d -P(=expose) : 테스트의 경우 랜덤하게 포트지정하게 해줌
      
    - docker 디렉토리 공유  
      - docker run -v(볼륨공유) /tmp(호스트 경로) : /usr/share/nginx/html
-     ```   
-     docker run -d -p 8282:80 --cpus 0.5 --memory 128m -v /tmp:/usr/share/nginx/html --name volume-container nginx
-     ```
-     
+
+   ```   
+   docker run -d -p 8282:80 --cpus 0.5 --memory 128m -v /tmp:/usr/share/nginx/html --name volume-container nginx
+   ```     
      - /tmp 폴더가 공유되었기 때문에 /tmp 폴더에 index.html을 생성해줘야 함
         - 해결방법 : echo "hello world" > index.html
      
    - docker 리스트 표시
+
    ```
    docker ps -a -f name=test_ : test_ 키값(글자)가 들어간 이름은 검색됨
    docker ps -a -f exited=0 : 컨테이너 상태에 따른 검색
