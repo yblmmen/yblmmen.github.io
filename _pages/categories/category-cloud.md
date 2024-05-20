@@ -1,9 +1,9 @@
 ---
-title: "JAVA"
+title: "Cloud"
 layout: category
-permalink: /categories/java/
+permalink: /categories/cloud/
 author_profile: true
-taxonomy: JAVA
+taxonomy: Cloud
 sidebar:
   nav: "categories"
 ---
