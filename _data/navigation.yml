@@ -39,7 +39,7 @@ categories:
   - title: "Project"
     children:
 
-  - title: "Coding Test"
+  - title: "Test"
     children:
      - title: "Programmers"
        url: /categories/programmers/
