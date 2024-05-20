@@ -8,3 +8,5 @@ comments: false
 배움에 있어 끝이 없는 이유는
 인간은 항상 부족하기 때문이고
 죽을 때 까지 배워야 살아 숨쉰다.
+![ex_screenshot](.https://github.com/yblmmen/gatsby.github.io/issues/1#issue-2305891385)
+ 
