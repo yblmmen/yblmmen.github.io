@@ -3,7 +3,7 @@ title: "[클라우드] 클라우드 시작해보기"
 excerpt: "클라우드란?"
 
 categories:
-  - cloud
+  - Cloud
 tags:
   - [cloud, aws]
 
