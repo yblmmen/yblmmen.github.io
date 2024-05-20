@@ -1,13 +1,13 @@
 ---
-title: "[Algorithm]-코테용 자바 함수 총정리"
-excerpt: "코딩테스트에서 유용하게 쓰이는 자바 함수 정리해보기"
+title: "[Kubernetes]-도커&쿠버네티스 1일차"
+excerpt: "도커 컨테이너 설치 및 실행 실습"
 
 categories:
-  - Algorithm
+  - Kubernetes
 tags:
-  - [algorithm, codingtest]
+  - [kubernetes, docker]
 
-permalink: /algorithm/post1/
+permalink: /kubernetes/post1/
 
 toc: true
 toc_sticky: true
