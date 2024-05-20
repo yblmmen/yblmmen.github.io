@@ -1,5 +1,5 @@
 ---
-title: "I am an engineer" 👋🏻"
+title: "I am an engineer who knows no bounds on learning. 👋🏻"
 permalink: /about/
 layout: single
 comments: false
