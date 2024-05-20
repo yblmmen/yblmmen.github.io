@@ -30,7 +30,7 @@ last_modified_at: 2024-03-16
     - centos7 or ubuntu
  - docker 설치
  
-```command
+```
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
@@ -39,7 +39,7 @@ sudo yum install -y bash-completion git
 sudo usermod -a -G docker johnlee
 ```
   - 시간설정변경
-  ```command
+  ```
   timedatectl set-timezone Asia/Seoul
   ```
   
@@ -65,13 +65,17 @@ sudo usermod -a -G docker johnlee
   - docker 이미지 상세검색
     - docker inspect nginx:latest
     - -f 옵션 : 특정 키워드 검색
+    ```
       - docker image inspect --format="{{.Os}}" nginx
       - docker inspect nginx | grep Os
+    ```
   - docker container 생성
     - docker create -p(port-foward 기능: publish)
       - 예) docker create - p 80(외부 port):80(container port)
-    - docker create -p 80:80 --name(컨테이너 이름설정) webserver nginx:latest
-  
+    ```    
+    docker create -p 80:80 --name(컨테이너 이름설정) webserver nginx:latest
+    ```
+    
   - docker container 시작
     - docker container start [container name] or [container id]
     
@@ -101,9 +105,10 @@ sudo usermod -a -G docker johnlee
     - docker run -i(interactive) : 표준입력을 연다. 포워그라운드 실행
     - docker run -t(tty) : 터미널 사용
     - 일반적으로 -i 와 -t 는 함께 사용
-      - docker run -it
-      - docker run -it ---name test_bash centos /bin/bash
-         - 실제 centos가 아니라 파일시스템만 유사한 도커이미지
+    ```
+    docker run -it
+    docker run -it ---name test_bash centos /bin/bash
+    ```
          
     - docker run --name test_cal centos /bin/cal
       - Unable to find image 'centos:latest' locally  
@@ -122,17 +127,22 @@ sudo usermod -a -G docker johnlee
     - 
    
   - docker 백그라운드 실행
-    - docker run -d 
-    - docker run -d --name test_ping centos /bin/ping localhost
-      - 확인 : docker logs -t test_ping2
+    - docker run -d
+    
+    ```
+    docker run -d --name test_ping centos /bin/ping localhost
+    확인 : docker logs -t test_ping2
+    ```
     
   - docker container 상태 확인
     - docker logs -t : 중요함
-    - test : docker run -d -p 80:80 --name test_port_confict nginx
-    - test 2 : docker run -d -p 88:80 --name test_port_confict nginx          
-      - port 충돌이후 또 실행하면 이번에는 container 명이 충돌이 발생함
-    - 해결 : docker run -d -p 88:80 --name test_port_confict2 nginx
-      - container 명을 변경후 해결
+    ```
+    test : docker run -d -p 80:80 --name test_port_confict nginx
+    test 2 : docker run -d -p 88:80 --name test_port_confict nginx          
+     - port 충돌이후 또 실행하면 이번에는 container 명이 충돌이 발생함
+     - 해결 : docker run -d -p 88:80 --name test_port_confict2 nginx
+     - container 명을 변경후 해결
+    ```
     
   - docker state (도커 상태 모니터링)
     - docker stats [container 이름]
@@ -140,28 +150,37 @@ sudo usermod -a -G docker johnlee
       - cpu는 %, memory는 총량을 기준으로 표시
   
   - docker 리소스 지정방법
-     - docker container run -d -p 8181:80 --cpu 1 --memory=256m --name test_resource nginx
+  ```  
+  docker container run -d -p 8181:80 --cpu 1 --memory=256m --name test_resource nginx
+  ```
      - nginx에서는 이미지 내부에 container 내 port를 80 port로 기본세팅되어 있음
-        - 검색: docker inspect --format="{{.Config.ExposedPorts}}" nginx
+     ```
+     검색: docker inspect --format="{{.Config.ExposedPorts}}" nginx
+     ```
      - container에서 cpu는 소수점 지정 가능
         - cpu 0.1 or cpu 0.25
      - docker run -d -P(=expose) : 테스트의 경우 랜덤하게 포트지정하게 해줌
      
    - docker 디렉토리 공유  
-     - docker run -v(볼륨공유) /tmp(호스트 경로) : /usr/share/nginx/html   
-     - docker run -d -p 8282:80 --cpus 0.5 --memory 128m -v /tmp:/usr/share/nginx/html --name volume-container nginx
+     - docker run -v(볼륨공유) /tmp(호스트 경로) : /usr/share/nginx/html
+     ```   
+     docker run -d -p 8282:80 --cpus 0.5 --memory 128m -v /tmp:/usr/share/nginx/html --name volume-container nginx
+     ```
+     
      - /tmp 폴더가 공유되었기 때문에 /tmp 폴더에 index.html을 생성해줘야 함
         - 해결방법 : echo "hello world" > index.html
      
    - docker 리스트 표시
-     - docker ps -a -f name=test_ : test_ 키값(글자)가 들어간 이름은 검색됨
-     - docker ps -a -f exited=0 : 컨테이너 상태에 따른 검색
-     - docker ps -a --format "tabe{{.Nmae}}"\
-       - 예) docker ps -a --format "table{{.Names}}\t{{.Status}}"
-     - docker ps -a --format "table{{.Names}}\t{{.Status}}" > table.txt  
-       - 특정 파일로 저장 및 출력
-       - 확인 : cat table.txt
-    
+   ```
+   docker ps -a -f name=test_ : test_ 키값(글자)가 들어간 이름은 검색됨
+   docker ps -a -f exited=0 : 컨테이너 상태에 따른 검색
+   docker ps -a --format "tabe{{.Nmae}}"\
+   - 예) docker ps -a --format "table{{.Names}}\t{{.Status}}"
+   - docker ps -a --format "table{{.Names}}\t{{.Status}}" > table.txt   
+    -> 특정 파일로 저장 및 출력
+    -> 확인 : cat table.txt
+   ``` 
+   
    - 동작중인 컨테이너 실행(docker container exec)
      - attach
        - docker attach test_bash
