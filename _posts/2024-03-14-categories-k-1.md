@@ -59,23 +59,29 @@ sudo usermod -a -G docker johnlee
     - 예) image 명: docker.io(생략)/nginx/latest   
   
   - docker 이미지 ID 검색
+  
   ```  
-  - docker images -q
+  docker images -q
   ```
+  
   - docker 이미지 상세검색
-    - docker inspect nginx:latest
-    - -f 옵션 : 특정 키워드 검색
-    ```
-      - docker image inspect --format="{{.Os}}" nginx
-      - docker inspect nginx | grep Os
-    ```
+  ```
+  docker inspect nginx:latest
+  ```
+  - 옵션(-format) : 특정 키워드 검색
+
+  ```
+  docker image inspect --format="{{.Os}}" nginx
+  docker inspect nginx | grep Os
+  ```
   
   - docker container 생성
-    - docker create -p(port-foward 기능: publish)
-      - 예) docker create - p 80(외부 port):80(container port)
-    ```    
-    docker create -p 80:80 --name(컨테이너 이름설정) webserver nginx:latest
-    ```
+  - docker create -p(port-foward 기능: publish)
+    - docker create - p 80(외부 port):80(container port)
+       
+  ```    
+  docker create -p 80:80 --name(컨테이너 이름설정) webserver nginx:latest
+  ```
     
   - docker container 시작
     - docker container start [container name] or [container id]
