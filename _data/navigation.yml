@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: https://snowball9820.github.io/
+    url: https://yblmmen.github.io/
 
   - title: "About Me"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/snowball9820
+    url: https://github.com/yblmmen
 
   # - title: "Projects"
   #   url: /projects/
@@ -20,14 +20,14 @@ main:
 categories:
   - title: "Studying"
     children:
-     - title: "Algorithm"
-       url: /categories/algorithm/
-     - title: "JAVA"
-       url: /categories/java/
+     - title: "Kubernetes"
+       url: /categories/kubernetes/
+     - title: "Linux"
+       url: /categories/linux/
      - title: "GITHUB"
        url: /categories/github/
-     - title: "Docker"
-       url: /categories/docker/
+     - title: "Cloud"
+       url: /categories/cloud/
 
   - title: "Framework"
     children:
