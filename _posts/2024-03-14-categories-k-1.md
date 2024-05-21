@@ -12,8 +12,8 @@ permalink: /kubernetes/k-1/
 toc: true
 toc_sticky: true
 
-date: 2024-03-14
-last_modified_at: 2024-03-16
+date: 2024-05-20
+last_modified_at: 2024-03-20
 ---
 
 ## Docker&kuber 1D
