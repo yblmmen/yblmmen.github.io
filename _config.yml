@@ -98,11 +98,11 @@ analytics:
 
 # Site Author
 author:
-  name: "your name here" # 블로그 닉네임
+  name: "hyunwoo's netops" # 블로그 닉네임
   avatar: "/assets/images/moon.jpg" # 블로그 프로필 사진
-  bio              : "Hello, I'm SeHee Moon!"
+  bio              : "Hello, I'm hyunwoo!"
   location         : "Seoul, South Korea"
-  email            : "snowball9820@gmail.com"
+  email            : "yblmmen@gmail.com"
 
   links: # 사이트 링크
 #     - label: "Email"
@@ -110,7 +110,7 @@ author:
 #       # url: "mailto:your.name@email.com"
 #     - label: "Website"
 #       icon: "fas fa-fw fa-link"
-#       # url: "https://your-website.com"
+#       # url: "https://yblmmen.github.io"
 #     - label: "Twitter"
 #       icon: "fab fa-fw fa-twitter-square"
 #       # url: "https://twitter.com/"
