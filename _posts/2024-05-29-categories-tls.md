@@ -252,8 +252,46 @@ exit
 
 ```
 
-### 5. 체크리스트
+### 5. 성능측정
 
+#### wrk 설치
+
+```
+# RHEL/CentOS
+sudo yum install make gcc git openssl-devel  
+sudo yum -y install openssl-devel git
+
+# Ubuntu
+sudo apt install make gcc unzip git libssl-dev
+
+# wrk git 저장소를 복제
+git clone https://github.com/wg/wrk.git 
+cd wrk
+
+# 소스를 컴파일
+make WITH_OPENSSL=/usr/
+
+#### wrk 사용
+
+>
+- -c, --connections <N>  Connections to keep open
+- -d, --duration    <T>  Duration of test
+- -t, --threads     <N>  Number of threads to use
+
+```
+# 12개 스레드를 400개 연결 후 30초 동안 요청을 전송 
+$ wrk -t12 -c400 -d30s http://127.0.0.1:8080/index.php
+
+Running 30s test @ http://127.0.0.1:8080/index.php
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    44.36ms   82.08ms   1.70s    98.07%
+    Req/Sec   176.84    119.42     1.04k    69.73%
+  59915 requests in 30.11s, 3.60GB read
+  Socket errors: connect 0, read 59915, write 0, timeout 0
+Requests/sec:   1990.17
+Transfer/sec:    122.33MB
+```
 
 
 
