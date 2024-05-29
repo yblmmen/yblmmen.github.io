@@ -28,6 +28,8 @@ categories:
        url: /categories/github/
      - title: "Cloud"
        url: /categories/cloud/
+     - title: "Network"
+       url: /categories/network/  
 
   - title: "Framework"
     children:
@@ -38,7 +40,9 @@ categories:
        
   - title: "Project"
     children:
-
+     - title: "project"
+       url: /categories/project/
+       
   - title: "Test"
     children:
      - title: "Programmers"
