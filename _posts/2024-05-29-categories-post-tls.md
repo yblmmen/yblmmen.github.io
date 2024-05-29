@@ -1,13 +1,13 @@
 ---
-title: "[Network]-PAS-K5600 SSL/TLS POC"
+title: "[Project]-PAS-K5600 SSL/TLS POC"
 excerpt: "SSL/TLS 가속 "
 
 categories:
-  - network
+  - project
 tags:
   - [ssl, tls, PAS-K]
 
-permalink: /network/tls/
+permalink: /project/tls/
 
 toc: true
 toc_sticky: true
