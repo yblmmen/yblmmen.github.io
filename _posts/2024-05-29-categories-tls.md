@@ -295,8 +295,14 @@ Requests/sec:   1990.17
 Transfer/sec:    122.33MB
 ```
 
+#### Lua Script 실행
+```
+// 실행
+wrk -t12 -c400 -d30s http://master1.innerinfo.net:30100/echo-test
 
-
+// 스크립트 호출
+wrk -t2 -c2 -d2s -s pipeline.lua  "http://master1.innerinfo.net:30100/echo-test/postback" --latency
+```
 
 
 
