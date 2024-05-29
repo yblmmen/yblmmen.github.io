@@ -309,8 +309,19 @@ wrk -t2 -c2 -d2s -s pipeline.lua  "http://master1.innerinfo.net:30100/echo-test/
 #### 로드밸런스 테스트
 
 ```
+// real-server
+show real
+
+// health-check
+show health-check
+
+// advl7cslb
+show info advl7cslb | advl7slb [정책명]
+show info advl7cslb | advl7slb [정책명] group [group명]
+
 // sample
 for i in {1..300}; do curl master1.innerinfo.net:30100/echo-test | grep Hostname ; done | sort | uniq -c | sort -nr
+
 ```
 
 ### 6. 체크리스트
