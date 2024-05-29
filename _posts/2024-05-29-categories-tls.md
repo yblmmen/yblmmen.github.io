@@ -278,8 +278,9 @@ make WITH_OPENSSL=/usr/
 - -d, --duration    <T>  Duration of test
 - -t, --threads     <N>  Number of threads to use
 
+
 ```
-# 12개 스레드를 400개 연결 후 30초 동안 요청을 전송 
+// 12개 스레드를 400개 연결 후 30초 동안 요청을 전송 
 $ wrk -t12 -c400 -d30s http://127.0.0.1:8080/index.php
 
 Running 30s test @ http://127.0.0.1:8080/index.php
