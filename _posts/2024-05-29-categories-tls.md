@@ -284,6 +284,7 @@ make WITH_OPENSSL=/usr/
 // 12개 스레드를 400개 연결 후 30초 동안 요청을 전송 
 $ wrk -t12 -c400 -d30s http://127.0.0.1:8080/index.php
 
+// 실행 결과
 Running 30s test @ http://127.0.0.1:8080/index.php
   12 threads and 400 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -296,6 +297,7 @@ Transfer/sec:    122.33MB
 ```
 
 #### Lua Script 실행
+
 ```
 // 실행
 wrk -t12 -c400 -d30s http://master1.innerinfo.net:30100/echo-test
@@ -304,6 +306,8 @@ wrk -t12 -c400 -d30s http://master1.innerinfo.net:30100/echo-test
 wrk -t2 -c2 -d2s -s pipeline.lua  "http://master1.innerinfo.net:30100/echo-test/postback" --latency
 ```
 
+
+### 6. 체크리스트
 
 
 
