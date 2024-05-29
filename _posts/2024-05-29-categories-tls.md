@@ -306,6 +306,12 @@ wrk -t12 -c400 -d30s http://master1.innerinfo.net:30100/echo-test
 wrk -t2 -c2 -d2s -s pipeline.lua  "http://master1.innerinfo.net:30100/echo-test/postback" --latency
 ```
 
+#### 로드밸런스 테스트
+
+```
+// sample
+for i in {1..300}; do curl master1.innerinfo.net:30100/echo-test | grep Hostname ; done | sort | uniq -c | sort -nr
+```
 
 ### 6. 체크리스트
 
