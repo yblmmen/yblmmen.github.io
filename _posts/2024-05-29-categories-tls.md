@@ -270,6 +270,7 @@ cd wrk
 
 # 소스를 컴파일
 make WITH_OPENSSL=/usr/
+```
 
 #### wrk 사용
 
