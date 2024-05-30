@@ -25,5 +25,5 @@ last_modified_at: 2024-05-31
 - 설치 : kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.6.1/aio/deploy/recommended.yaml
 - 설치확인 : kubectl get pod --all-namespaces
 - 대시보드 log : kubectl -n kubernetes-dashboard logs -f kubernetes-dashboard-6c8b589b99-5f4hg
-- 대시보드 describe :    dashboard]# kubectl -n kubernetes-dashboard describe pod kubernetes-dashboard-6c8b589b99-5f4hg
+- 대시보드 describe : kubectl -n kubernetes-dashboard describe pod kubernetes-dashboard-6c8b589b99-5f4hg
 ``` 
