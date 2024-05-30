@@ -27,3 +27,29 @@ last_modified_at: 2024-05-31
 - 대시보드 log : kubectl -n kubernetes-dashboard logs -f kubernetes-dashboard-6c8b589b99-5f4hg
 - 대시보드 describe : kubectl -n kubernetes-dashboard describe pod kubernetes-dashboard-6c8b589b99-5f4hg
 ``` 
+
+### 2. Dashboard 보안접근
+> 접근권한 > RBAC(Role Based Access Control) > ClusterRoleBing
+
+```
+- mkdir dashboard_token && cd $_
+- vi Cluster
+- vi ClusterRoleBinding.yaml
+
+// ClusterRoleBinding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: kubernetes-dashboard2
+  labels:
+    k8s-app: kubernetes-dashboard
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: secret-admin
+subjects:
+- kind: ServiceAccount
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+```
+
