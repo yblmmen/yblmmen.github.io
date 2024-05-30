@@ -35,21 +35,80 @@ last_modified_at: 2024-05-31
 - mkdir dashboard_token && cd $_
 - vi Cluster
 - vi ClusterRoleBinding.yaml
+```
 
-// ClusterRoleBinding.yaml
+### 3. 파일 커스텀 
+```
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    k8s-app: kubernetes-dashboard
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+spec:
+  ports:
+    - nodePort: 30880	# <-- 여기 노드 포트 뚫
+      port: 443
+      targetPort: 8443
+  selector:
+    k8s-app: kubernetes-dashboard
+  type: NodePort		# <-- 노드 포트를 쓰겠다는 설정
+```
+
+### 4. 대시보드 클러스터 바인딩 생성
+```
+cat <<EOF | kubectl create -f -
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: kubernetes-dashboard2
-  labels:
-    k8s-app: kubernetes-dashboard
+  name: admin-user
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: secret-admin
+  name: admin
 subjects:
 - kind: ServiceAccount
-  name: kubernetes-dashboard
+  name: admin-user
   namespace: kubernetes-dashboard
+EOF
 ```
+
+### 5. 대시보드 사용자 서비스 맵핑
+```
+cat <<EOF | kubectl create -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard
+EOF
+```
+
+### 6. 토큰 제한시간 변경 (선택 사항)
+```
+kubectl edit -n kubernetes-dashboard deployments.apps kubernetes-dashboard
+
+# ... content before...
+
+    spec:
+      containers:
+      - args:
+        - --auto-generate-certificates
+        - --namespace=kubernetes-dashboard
+        - --token-ttl=0 # <-- 이걸 추가
+      image: kubernetesui/dashboard:v2.6.0
+```
+
+### 7. 발행된 토큰으로 로그인
+> kubectl -n kubernetes-dashboard create token admin-user
+
+
+### 8. 토큰 확인
+```
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}') 
+```
+
+
+
 
