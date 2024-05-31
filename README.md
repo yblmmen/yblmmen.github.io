@@ -330,15 +330,7 @@ comments: false
 _문의사항 또는 수정 요청은 블로그에 댓글 남겨주시거나 이메일로 연락주세요!_
 
 ---
-
-### 개발 기록
-
-[VER1.0]
-![choiiis github blog main](/assets/images/posts_img/readme/blog-main-ver1.png)
-
-[VER2.0]
-![choiiis github blog main](/assets/images/posts_img/readme/blog-main-ver2.png)
-
+ 
 - logo 변경
 - 카테고리 디자인 변경
 - font family, size 변경
