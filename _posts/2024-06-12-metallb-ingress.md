@@ -46,6 +46,7 @@ kubectl apply -f - -n kube-system
 이제 설치
 
 Installation By Manifest
+공식사이트 [metallb.io](https://metallb.io/installation/)
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.0/manifests/namespace.yaml
