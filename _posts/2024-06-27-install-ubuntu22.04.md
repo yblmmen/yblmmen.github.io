@@ -212,9 +212,41 @@ kubectl get nodes
 ```
 Great, above confirms that nodes are active node. Now, we can say that our Kubernetes cluster is functional.
 
+### 9) Helm 설치
 
+Install HELM on Ubuntu 22.04 from its binaries
+```
+wget https://get.helm.sh/helm-v3.15.2-linux-amd64.tar.gz
+```
 
+Once the download is complete, extract the tarball file
+```
+tar -xvf  helm-v3.12.0-linux-amd64.tar.gz
+```
 
+The extraction results in a directory called Linux-amd64 that contains all the Helm binary files.
+```
+sudo mv linux-amd64  /usr/local/bin
+```
+
+Now confirm Helm version as shown.
+```
+helm version
+```
+
+### 9-1) Install HELM on Ubuntu  from snap
+
+The other alternative is to install Ubuntu from Snap. To refresh your memory, Snap is a cross-platform packaging system that packages an application together with its source code, libraries, dependencies, and everything an application needs to run.
+
+To install Helm from snap, run the following command on the terminal
+
+```
+sudo snap install helm --classic
+```
+
+Note that this does not install the latest version of Helm. To install the latest version, use the previous installation method.
+
+ 
 
 
 
