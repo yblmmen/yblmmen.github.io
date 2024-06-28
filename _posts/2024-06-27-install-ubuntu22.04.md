@@ -85,7 +85,7 @@ EOT
 ```
 
 Reload the above changes, run
-``
+```
 sudo sysctl --system
 ```
 
