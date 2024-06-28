@@ -213,9 +213,6 @@ kubectl get nodes
 ```
 Great, above confirms that nodes are active node. Now, we can say that our Kubernetes cluster is functional.
 
-### 
-
-
 
 
 
