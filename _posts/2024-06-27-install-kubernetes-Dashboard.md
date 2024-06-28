@@ -160,3 +160,54 @@ Forwarding from 0.0.0.0:10443 -> 8443
 ```
 
 Now, open your web browser and access Kubernetes Dashboard using the URL https://server-ip:10443. You will be asked to enter a token to log in.
+
+### Metrics-server 설치
+
+```
+https://github.com/kubernetes-sigs/metrics-server  // 설치레포지토리
+```
+
+install 항목에서 아래 conmmand로 설치 실행
+```
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
+
+설치 후 running 상태이나 fail 발생하므로 아래처럼 --kubelet-insecure-tls 옵션추가
+
+```
+kubectl -n kube-system  edit deployments.apps metrics-server
+또는
+vi commponents.yaml 을 편집기로 열어서
+
+ containers:
+   - args:
+     - --cert-dir=/tmp
+     ...
+     - --kubelet-insecure-tls <- 추가하면 됨
+```
+
+정상동작 확인
+
+```
+kubectl top pod
+NAME                              CPU(cores)   MEMORY(bytes)   
+coredns-5d78c9869d-7rsmp          5m           14Mi            
+coredns-5d78c9869d-82j7n          4m           14Mi
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
