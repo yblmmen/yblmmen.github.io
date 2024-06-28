@@ -17,7 +17,7 @@ last_modified_at: 2024-06-27
 ---
 
 ## How to Install Kubernetes Cluster on Ubuntu 22.04
-
+>
 ```
 Table of Contents
 Prerequisites
@@ -181,8 +181,7 @@ kubectl get nodes
 
 On each worker node, use the kubeadm join command you noted down earlier after initializing the master node on step 6. It should look something like this:
 ```
-sudo kubeadm join k8smaster.example.net:6443 --token vt4ua6.wcma2y8pl4menxh2 \
-   --discovery-token-ca-cert-hash sha256:0494aa7fc6ced8f8e7b20137ec0c5d2699dc5f8e616656932ff9173c94962a36
+sudo kubeadm join k8smaster.example.net:6443 --token vt4ua6.wcma2y8pl4menxh2 --discovery-token-ca-cert-hash sha256:0494aa7fc6ced8f8e7b20137ec0c5d2699dc5f8e616656932ff9173c94962a36
 ```
 
 Output from both the worker nodes,
