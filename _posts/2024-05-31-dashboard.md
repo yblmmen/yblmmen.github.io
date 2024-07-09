@@ -23,25 +23,45 @@ last_modified_at: 2024-05-31
 ```
 // 대시보드 배포 파일 다운로드
 wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+kubectl apply -f recommanded.yaml
 
 // 대시보드 서비스 nodeport 수정
  kubectl edit svc kubernetes-dashboard -n kubernetes-dashboard
-    # 45번 라인에 NodePort 추가
-    39 spec:
-    40   ports:
-    41     - port: 443
-    42       targetPort: 8443
-    43   selector:
-    44     k8s-app: kubernetes-dashboard
-    45   type: NodePort
-
-// 수정한 배포 파일로 대시보드 배포
-kubectl apply -f recommended.yaml
-
+ apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    k8s-app: kubernetes-dashboard
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+  resourceVersion: "496361"
+  uid: 227af817-5a33-4ce8-a3dd-adb43030d376
+spec:
+  clusterIP: 10.97.19.146
+  clusterIPs:
+  - 10.97.19.146
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 31000 -> 추가한다.
+    port: 443
+    protocol: TCP
+    targetPort: 8443
+  selector:
+    k8s-app: kubernetes-dashboard
+  sessionAffinity: None
+  type: NodePort -> 수정한다.
+status:
+  loadBalancer: {}
+ 
 ```
 
 #### 쿠버네티스 대시보드 7.x 버전부터는 helm을 이용한 설치방법을 권고한다.
+
 ```
+헬름으로 설치하는 방법
 // Add kubernetes-dashboard repository
 helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 
@@ -52,7 +72,7 @@ helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dash
 
 #### 대시보드에서 metrics 정보를 표시하기 위해 metrics server를 설치한다.
 ```
-kubectl create -f https://raw.githubusercontent.com/k8s-1pro/install/main/ground/k8s-1.27/metrics-server-0.6.3/metrics-server.yaml
+kubectl create -f https://raw.githubusercontent.com/k8s-1pro/install/main/ground/k8s-1.30/metrics-server-0.6.3/metrics-server.yaml
 ```
 
 #### 대시보드 포트포워딩
