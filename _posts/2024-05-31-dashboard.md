@@ -81,6 +81,15 @@ helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dash
 // Metrics Server를 설치
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.7.0/components.yaml
 
+//  kubectl -n kube-system  edit deployments.apps metrics-server 또는 components.yaml 파일에
+- --kubelet-insecure-tls 를 추가
+
+ containers:
+   - args:
+     - --cert-dir=/tmp
+     ...
+     - --kubelet-insecure-tls <- 추가하면 됨
+
 //설치 결과를 확인
 kubectl get deployment metrics-server -n kube-system
 
