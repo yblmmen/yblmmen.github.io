@@ -68,11 +68,25 @@ helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 // Deploy a Helm Release named "kubernetes-dashboard" using the kubernetes-dashboard chart
 helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard
 
+// 설치후 로그인 시 접속오류가 발생하는 이슈로 인해 helm설치 보류
+
 ```
 
+
 #### 대시보드에서 metrics 정보를 표시하기 위해 metrics server를 설치한다.
+
+참고 - [Kubernetes Metrics Server documentation](https://github.com/kubernetes-sigs/metrics-server/releases)
+
 ```
-kubectl create -f https://raw.githubusercontent.com/k8s-1pro/install/main/ground/k8s-1.30/metrics-server-0.6.3/metrics-server.yaml
+// Metrics Server를 설치
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.7.0/components.yaml
+
+//설치 결과를 확인
+kubectl get deployment metrics-server -n kube-system
+
+// 노드와 파드 메트릭을 조회
+kubectl top nodes
+kubectl top pod
 ```
 
 #### 대시보드 포트포워딩
