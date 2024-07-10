@@ -200,7 +200,12 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 
 
 ### 8. 발행된 토큰으로 로그인
-> kubectl -n kubernetes-dashboard create token admin-user
+```
+https://192.168.100.62:30443
+```
+
+
+
 
 
 
