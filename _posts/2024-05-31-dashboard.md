@@ -17,7 +17,9 @@ last_modified_at: 2024-05-31
 ---
 
 
-## Kubenetes Dashboard & SSL
+### Kubenetes github 주소 
+[dashboard github](https://github.com/kubernetes/dashboard?tab=readme-ov-file)
+
 
 ### 1. Dashboard 설치
 ```
@@ -98,13 +100,13 @@ kubectl top nodes
 kubectl top pod
 ```
 
-#### 대시보드 포트포워딩
+#### 대시보드 포트포워딩(선택)
 ```
 kubectl -n kubernetes-dashboard port-forward svc/kubernetes-dashboard-kong-proxy 8443:443 --address 0.0.0.0
 ```
 
 
-### 2. 대시보드 서비스 확인
+### 2. 대시보드 서비스 확인(선택)
 ```
 kubectl get services -n kubernetes-dashboard
 // 확인한 포트 번호 기록
@@ -160,6 +162,8 @@ EOF
 
 ### 5. 대시보드 사용자 서비스 맵핑
 ```
+// ServiceAccount 생성
+
 cat <<EOF | kubectl create -f -
 apiVersion: v1
 kind: ServiceAccount
@@ -167,6 +171,9 @@ metadata:
   name: admin-user
   namespace: kubernetes-dashboard
 EOF
+
+// admin-user 토큰 생성 (이게 없으면 대시보드 접속 후 활성화 불가)
+kubectl -n kubernetes-dashboard create token admin-user
 ```
 
 ### 6. 토큰 제한시간 변경 (선택 사항)
