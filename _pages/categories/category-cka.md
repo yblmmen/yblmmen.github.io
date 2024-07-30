@@ -1,5 +1,5 @@
 ---
-title: "cka"
+title: "CKA"
 layout: category
 permalink: /categories/cka/
 author_profile: true
