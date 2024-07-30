@@ -1,4 +1,20 @@
+---
+title: "[CKA] Side-car Container Pod 실행하기"
+excerpt: "Side-car Container Pod 실행하기"
 
+categories:
+  - CKA
+tags:
+  - [cka, sidercar, pod]
+
+permalink: /cka/2024-07-30-categories-CKA-5.md/
+
+toc: true
+toc_sticky: true
+
+date: 2024-07-30
+last_modified_at: 2024-07-30
+---
 
 
 
