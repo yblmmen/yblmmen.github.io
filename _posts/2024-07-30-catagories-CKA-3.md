@@ -1,3 +1,22 @@
+---
+title: "[CKA]  Static Pod 생성하기 "
+excerpt: "Static Pod 생성하기"
+
+categories:
+  - CKA
+tags:
+  - [cka, static ,pod]
+
+permalink: /cka/2024-07-30-categories-CKA-3.md/
+
+toc: true
+toc_sticky: true
+
+date: 2024-07-30
+last_modified_at: 2024-07-30
+---
+
+
 # [3] Static Pod 생성하기
 
 일반적으로 kubectl 명령어를 실행하면 그 명령어가 API 서버에 전달되어 명령어 실행이 이루어 지는데 Static Pod의 경우에는 API 서버에 명령어가 전달되지 않는다.
