@@ -29,7 +29,9 @@ categories:
      - title: "Cloud"
        url: /categories/cloud/
      - title: "Network"
-       url: /categories/network/  
+       url: /categories/network/ 
+     - title: "CKA"
+       url: /categoreis/cka/
 
   - title: "Framework"
     children:
