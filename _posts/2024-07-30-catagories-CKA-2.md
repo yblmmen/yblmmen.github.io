@@ -1,3 +1,22 @@
+---
+title: "[CKA]  Pod 생성하기 "
+excerpt: "Pod 생성하기"
+
+categories:
+  - CKA
+tags:
+  - [cka,pod]
+
+permalink: /cka/2024-07-30-categories-CKA-2.md/
+
+toc: true
+toc_sticky: true
+
+date: 2024-07-30
+last_modified_at: 2024-07-30
+---
+
+
 # [2] Pod 생성하기
 
 ## ❓Pod 생성하기
