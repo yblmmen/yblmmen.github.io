@@ -1,5 +1,5 @@
 ---
-title: "[6] Deployment & Pod Scale"
+title: "[CKA] Deployment & Pod Scale"
 excerpt: "Side-car Container Pod 실행하기"
 
 categories:
