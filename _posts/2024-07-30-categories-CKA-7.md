@@ -1,5 +1,5 @@
 ---
-title: "[7] Rolling Update & Rollback"
+title: "[CKA] Rolling Update & Rollback"
 excerpt: "Rolling Update & Rollback"
 
 categories:
