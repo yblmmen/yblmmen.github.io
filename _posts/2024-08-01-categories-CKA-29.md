@@ -1,5 +1,5 @@
 ---
-title: "[CKA] Kube-DNS
+title: "[CKA] Kube-DNS"
 excerpt: "Kube-DNS"
 
 categories:
