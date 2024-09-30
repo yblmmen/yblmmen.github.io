@@ -22,6 +22,10 @@ last_modified_at: 2024-05-08
 ## II. 퍼블릭 클라우드와 프라이빗 클라우드
 
 
+![What,V-HCI-Cloud](https://github.com/user-attachments/assets/b9eb2133-3c82-4646-915b-93a588951dbb)
+
+
+
 ## III. 클라우드 실습
 
 
